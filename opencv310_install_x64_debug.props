@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_PropertySheetDisplayName>opencv310_install_x64_debug_gl</_PropertySheetDisplayName>
+    <IncludePath>F:\build;F:\build\SOIL\src;F:\build\GLFW;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\build\SOIL\projects\VC9\x64\Debug;F:\build;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\build\glut;F:\opencv_required\opencv\my_build1\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLUT_BUILDING_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>F:\opencv_required\opencv\my_build1\install\x64\vc14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_ts310d.lib;opencv_world310d.lib;legacy_stdio_definitions.lib;glew32.lib;glfw3.lib;opengl32.lib;SOIL.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
